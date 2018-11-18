@@ -1,9 +1,11 @@
 <div align="center">
-<h1> Simple Wordcount Apps </h1>
-<p>This Apps build with Django Python Framework</p>
-<form action="{% url 'count' %}">
-    <textarea cols="40" rows="8"></textarea>
-    <br>
-    <input type="submit" value="Count !">
-</form>
+    <h1> Simple Wordcount Apps </h1>
+    <p>This Apps build with Django Python Framework</p>
+    <form action="{% url 'count' %}">
+        <h3>Type your text here:</h3>
+        <textarea cols="60" rows="9" name="fulltext"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Count !">
+    </form>
 </div>

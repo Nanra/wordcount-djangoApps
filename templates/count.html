@@ -1,1 +1,18 @@
-<h1>Count Page</h1>
+<div align="center">
+<h1>There are {{ textCount }} words in your text</h1>
+
+<h4>Your Text : </h4>
+<textarea cols="60" rows="9"> {{ text }} </textarea>
+
+<h4>Number of words : </h4>
+<h1> {{ textCount }} </h1>
+
+<h4>Word Count:</h4>
+{% for word, total  in kamusKata  %}
+{{word}} <span><strong> {{total}} </strong></span>
+<span></span> |
+{% endfor %}
+<br>
+<br>
+<a type="button" href="/">Type Again</a>
+<div>
